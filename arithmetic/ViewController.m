@@ -20,6 +20,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     NSLog(@"1+2+3+......+100和为：%ld",[Arithmetic numTotal:100]);
+    NSLog(@"10层楼有%ld种方法上楼",[Arithmetic numToWayWithstairs:10]);
 }
 
 

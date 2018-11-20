@@ -17,4 +17,11 @@
     return num + [self numTotal:num - 1];
 }
 
++ (NSInteger)numToWayWithstairs:(NSInteger)num{
+    if (num < 3) {
+        return num;
+    }
+    return [self numToWayWithstairs:num-1] + [self numToWayWithstairs:num-2];
+}
+
 @end
